@@ -384,6 +384,7 @@ request an input stream and get an output stream in response\)."
 (define-socket-condition sockint::ENOTCONN not-connected-error)
 (define-socket-condition sockint::EAFNOSUPPORT address-family-not-supported)
 (define-socket-condition sockint::EINPROGRESS operation-in-progress)
+(define-socket-condition sockint::EWOULDBLOCK operation-would-block)
 
 (defun condition-for-errno (err)
   (or (cdr (assoc err *conditions-for-errno* :test #'eql)) 'socket-error))

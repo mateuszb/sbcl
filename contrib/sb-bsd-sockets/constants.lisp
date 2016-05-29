@@ -76,6 +76,7 @@
 ;; errors
  (:integer EADDRINUSE "EADDRINUSE")
  (:integer EAGAIN "EAGAIN")
+ (:integer EWOULDBLOCK "EWOULDBLOCK")
  (:integer EBADF "EBADF")
  (:integer ECONNREFUSED "ECONNREFUSED")
  (:integer ETIMEDOUT "ETIMEDOUT")
