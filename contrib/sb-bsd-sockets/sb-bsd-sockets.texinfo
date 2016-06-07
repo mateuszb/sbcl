@@ -95,6 +95,8 @@ sockopt-receive-low-water)}.
 
 @include fun-sb-bsd-sockets-sockopt-reuse-address.texinfo
 
+@include fun-sb-bsd-sockets-sockopt-reuse-port.texinfo
+
 @include fun-sb-bsd-sockets-sockopt-keep-alive.texinfo
 
 @include fun-sb-bsd-sockets-sockopt-oob-inline.texinfo

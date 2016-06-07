@@ -26,6 +26,7 @@
  (:integer so-debug "SO_DEBUG"
    "Enable debugging in underlying protocol modules")
  (:integer so-reuseaddr "SO_REUSEADDR" "Enable local address reuse")
+ (:integer so-reuseport "SO_REUSEPORT" "Enable port reuse")
  (:integer so-type "SO_TYPE")                  ;get only
  (:integer so-error "SO_ERROR")                 ;get only (also clears)
  (:integer so-dontroute "SO_DONTROUTE"
