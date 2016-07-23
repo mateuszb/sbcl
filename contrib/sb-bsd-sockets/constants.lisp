@@ -196,6 +196,7 @@
  (:structure sockaddr-un-abstract ("struct sockaddr_un"
                               (integer family "sa_family_t" "sun_family")
                               ((array (unsigned 8)) path "char" "sun_path")))
+ (:integer ipv6-multicast-if "IPV6_MULTICAST_IF")
  (:integer INET-ADDRSTRLEN "INET_ADDRSTRLEN")
  (:integer INET6-ADDRSTRLEN "INET6_ADDRSTRLEN")
  (:function inet-ntop ("inet_ntop" c-string ; TODO external-format?

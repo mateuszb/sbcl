@@ -93,7 +93,8 @@ Code for options that not every system has should be conditionalised:
 (defmacro define-socket-option-int (name level number &optional features (info ""))
   `(define-socket-option ,name nil ,level ,number
      sb-alien:int nil foreign-int-to-integer sb-alien:addr ,features ,info))
-
+(define-socket-option-int
+  sockopt-ipv6-multicast-if sockint::ipproto_ipv6 sockint::ipv6-multicast-if)
 (define-socket-option-int
   sockopt-receive-low-water sockint::sol-socket sockint::so-rcvlowat)
 (define-socket-option-int
