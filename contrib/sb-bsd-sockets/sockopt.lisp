@@ -96,6 +96,12 @@ Code for options that not every system has should be conditionalised:
 (define-socket-option-int
   sockopt-ipv6-multicast-if sockint::ipproto_ipv6 sockint::ipv6-multicast-if)
 (define-socket-option-int
+  sockopt-ipv6-only sockint::ipproto_ipv6 sockint::ipv6-v6only)
+(define-socket-option-int
+  sockopt-ipv6-multicast-hops sockint::ipproto_ipv6 sockint::ipv6-multicast-hops)
+(define-socket-option-int
+  sockopt-ipv6-unicast-hops sockint::ipproto_ipv6 sockint::ipv6-unicast-hops)
+(define-socket-option-int
   sockopt-receive-low-water sockint::sol-socket sockint::so-rcvlowat)
 (define-socket-option-int
   sockopt-send-low-water sockint::sol-socket sockint::so-sndlowat)

@@ -197,6 +197,9 @@
                               (integer family "sa_family_t" "sun_family")
                               ((array (unsigned 8)) path "char" "sun_path")))
  (:integer ipv6-multicast-if "IPV6_MULTICAST_IF")
+ (:integer ipv6-v6only "IPV6_V6ONLY")
+ (:integer ipv6-multicast-hops "IPV6_MULTICAST_HOPS")
+ (:integer ipv6-unicast-hops "IPV6_UNICAST_HOPS")
  (:integer INET-ADDRSTRLEN "INET_ADDRSTRLEN")
  (:integer INET6-ADDRSTRLEN "INET6_ADDRSTRLEN")
  (:function inet-ntop ("inet_ntop" c-string ; TODO external-format?
