@@ -115,7 +115,8 @@ directly instantiated.")))
 (defmethod socket-connect ((socket socket) &rest peer)
   (with-socket-fd-and-addr (fd sockaddr size peer) socket
     (socket-error-case ("connect" (sockint::connect fd sockaddr size))
-        socket)))
+        socket
+	(:interrupted socket))))
 
 (defmethod socket-peername ((socket socket))
   (with-socket-fd-and-addr (fd sockaddr size) socket
